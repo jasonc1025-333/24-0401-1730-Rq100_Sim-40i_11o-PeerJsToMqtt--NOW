@@ -1,0 +1,88 @@
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+>>> 1a              "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+>>> 1b "clientPlayer_Data_PeerToPeer_Structure_InGlobal.network_Name_Str",
+                    "=",
+                    "P2P::GetLastConnectedPeer()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+>>> 2a              "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+>>> 2b "clientPlayer_Data_PeerToPeer_Structure_InGlobal.network_Index_Num",
+                    "=",
+                    "GlobalVariable(player_NextAvailable_NetworkIndex_Num_InGlobal)"
+                  ],
+                  "subInstructions": []
+                },
+
+-----
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_NetworkName_Str_InObject",
+                    "=",
+ >>> 3 "GlobalVariableString(clientPlayer_Data_PeerToPeer_Structure_InGlobal.network_Name_Str)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "player_NetworkIndex_Num_InObject",
+                    "=",
+ >>> 4 "GlobalVariable(clientPlayer_Data_PeerToPeer_Structure_InGlobal.network_Index_Num)"
+                  ],
+                  "subInstructions": []
+                },
+
+
+Keep Scene due to iteration limited to scene and not global
+                {
+                  "name": "clientPlayers_KeyAsName_ValueAsIndex_AdminToPeer_Structure_List",
+                  "type": "structure",
+                  "children": []
+                },
+            
+
+
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "enemyBots_Data_AdminToPeer_Structure
+                
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "enemyBots_Data_AdminToPeer_Structure_InGlobal 
+                
+
+                "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "enemyBots_Data_AdminToPeer_Structure
+
+                  "value": "ModVarGlobalTxt"
+                },
+                "parameters": [
+                  "enemyBots_Data_AdminToPeer_Structure_InGlobal
+
+
+TODO 
+* Trigger Event use tempvar
